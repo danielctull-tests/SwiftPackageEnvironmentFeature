@@ -1,6 +1,6 @@
-public struct MyLibrary {
-    public private(set) var text = "Hello, World!"
 
-    public init() {
-    }
-}
+#if DEVMENU
+public let name = "DEV MENU"
+#else
+public let name = "no dev menu"
+#endif

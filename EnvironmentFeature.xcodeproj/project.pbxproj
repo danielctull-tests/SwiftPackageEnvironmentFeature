@@ -11,6 +11,7 @@
 		6378BCD82A697FE500C02BB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6378BCD72A697FE500C02BB4 /* ContentView.swift */; };
 		6378BCDA2A697FE700C02BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6378BCD92A697FE700C02BB4 /* Assets.xcassets */; };
 		6378BCDE2A697FE700C02BB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6378BCDD2A697FE700C02BB4 /* Preview Assets.xcassets */; };
+		6378BCE72A69804500C02BB4 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 6378BCE62A69804500C02BB4 /* MyLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		6378BCD92A697FE700C02BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6378BCDB2A697FE700C02BB4 /* EnvironmentFeature.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnvironmentFeature.entitlements; sourceTree = "<group>"; };
 		6378BCDD2A697FE700C02BB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6378BCE42A69801D00C02BB4 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6378BCE72A69804500C02BB4 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +39,10 @@
 		6378BCC92A697FE500C02BB4 = {
 			isa = PBXGroup;
 			children = (
+				6378BCE42A69801D00C02BB4 /* MyLibrary */,
 				6378BCD42A697FE500C02BB4 /* EnvironmentFeature */,
 				6378BCD32A697FE500C02BB4 /* Products */,
+				6378BCE52A69804500C02BB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +74,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6378BCE52A69804500C02BB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +97,9 @@
 			dependencies = (
 			);
 			name = EnvironmentFeature;
+			packageProductDependencies = (
+				6378BCE62A69804500C02BB4 /* MyLibrary */,
+			);
 			productName = EnvironmentFeature;
 			productReference = 6378BCD22A697FE500C02BB4 /* EnvironmentFeature.app */;
 			productType = "com.apple.product-type.application";
@@ -350,6 +365,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6378BCE62A69804500C02BB4 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6378BCCA2A697FE500C02BB4 /* Project object */;
 }
